@@ -13,5 +13,7 @@ build:
   system_packages:
     - "libgl1-mesa-glx"
     - "libglib2.0-0"
+#  run:
+#    - "python -c \"from diffusers import StableDiffusionXLPipeline; StableDiffusionXLPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', use_safetensors=True, variant='fp16')\""
 
 predict: "predict.py:Predictor"
