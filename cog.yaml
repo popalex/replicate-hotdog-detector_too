@@ -1,13 +1,17 @@
 build:
   gpu: true
-  python_version: "3.10"
+  python_version: "3.11"
   python_packages:
-    - torch==2.1.2
-    - diffusers
-    - transformers
-    - accelerate
-    - safetensors
+    - "torch==2.5.1"
+    - "torchvision==0.20.1"
+    - "diffusers==0.32.2"
+    - "transformers==4.47.1"
+    - "accelerate==1.2.1"
+    - "safetensors==0.5.2"
+    - "huggingface_hub==0.27.1"
+    - "pillow==11.1.0"
   system_packages:
-    - git
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
 
 predict: "predict.py:Predictor"
