@@ -15,7 +15,10 @@ class Predictor(BasePredictor):
 
     def predict(
         self,
-        prompt: str = Input(description="Prompt for image generation"),
+        prompt: str = Input(
+            description="Prompt for image generation",
+            default="a photo of a hotdog"
+        ),
         num_steps: int = Input(
             description="Number of denoising steps",
             default=30,
