@@ -47,6 +47,12 @@ curl http://localhost:5000/predictions -X POST \
   -d '{"input": {"prompt": "a photo of a hotdog", "num_steps": 30}}'
 ```
 
+## Deploy the model
+
+```bash
+cog push r8.im/<user>/<project>
+```
+
 ## Model Details
 
 - **Base Model**: [stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
